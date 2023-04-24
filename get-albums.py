@@ -24,6 +24,6 @@ def get_albums(autor):
 
 autor = '-'.join(sys.argv[1:])
 
-with open(f"{autor}.json", "w") as file:
+with open(f"./authors/{autor}.json", "w") as file:
     json.dump(get_albums(autor), file)
 
